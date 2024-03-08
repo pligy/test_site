@@ -7,6 +7,10 @@ function encrypt() {
     let rows = Math.ceil(plaintext.length / columns); // Вычисляем количество строк
     let plusone = Math.ceil(plaintext.length % columns);
 
+    if (plusone == 0) {
+        plusone = 5;
+    }
+    
     // Заполняем матрицу символами
     let matrix = [];
     for (let i = 0; i < rows; i++) {
