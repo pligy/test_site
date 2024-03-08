@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px; /* Уменьшаем максимальную ширину контейнера */
+    margin: 20px auto;
+    text-align: center; /* Центрируем содержимое контейнера */
+}
+
+textarea {
+    width: 30%; /* Уменьшаем ширину текстовой области до 80% доступной ширины */
+    margin: 0 auto; /* Выравниваем по центру */
+    margin-bottom: 20px;
+    display: block; /* Размещаем текстовую область на новой строке */
+}
+
+label {
+    display: block; /* Размещаем метку на новой строке */
+    text-align: center; /* Выравниваем метку по центру */
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: block; /* Делаем кнопку блочным элементом */
+    width: 20%; /* Ширина кнопок */
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.button-wrapper {
+    margin-bottom: 20px; /* Добавляем отступ между кнопками */
+}
+
+h1 {
+    text-align: center;
+}

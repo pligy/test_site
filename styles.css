@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    display: block; /* Делаем кнопку блочным элементом */
+    width: 20%; /* Занимает 20% доступной ширины */
+    margin: 0 auto 10px; /* Автоматическое выравнивание по центру снизу и добавление отступа снизу */
+}
+
+h1 {
+    text-align: center;
+}
+
+.cipher-table {
+    display: none;
+    margin-top: 20px;
+    width: 40%; /* Ширина таблицы 80% от родительского контейнера */
+    margin: 0 auto; /* Выравнивание по центру */
+    margin-bottom: 20px;
+}
+
+.cipher-table table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Фиксированная ширина столбцов */
+}
+
+.cipher-table th,
+.cipher-table td {
+    border: 1px solid #ddd;
+    padding: 5px; /* Уменьшение внутренних отступов ячеек */
+    text-align: center;
+}
+
+.cipher-table th {
+    background-color: #f2f2f2; /* Цвет фона для заголовка */
+}

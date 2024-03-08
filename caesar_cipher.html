@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифр Цезаря</title>
+    <link rel="stylesheet" href="styles_caesar.css">
+</head>
+<body>
+    <h1>Шифр Цезаря</h1>
+    <div>
+        <label for="input">Введите текст для шифрования/расшифрования:</label>
+        <textarea id="input" rows="4"></textarea>
+        <div class="button-wrapper">
+            <button onclick="caesarEncrypt()">Зашифровать</button>
+            <button onclick="caesarDecrypt()">Расшифровать</button>
+        </div>
+        <label for="output">Результат:</label>
+        <textarea id="output" rows="4" readonly></textarea>
+    </div>
+    <button onclick="location.href='index.html'">Перейти к шифрованию по таблице</button>
+    <script src="caesar_cipher.js"></script>
+</body>
+</html>
