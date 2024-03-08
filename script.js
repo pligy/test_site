@@ -2,7 +2,7 @@
 
 // Функция для шифрования текста по таблице
 function encrypt() {
-    let plaintext = document.getElementById('input').value.toUpperCase().replace(/[^A-Z\s-]/g, ''); // Учитываем пробелы
+    let plaintext = document.getElementById('input').value.toUpperCase().replace(/[^A-Z\s-]/g, '');
     let columns = 5; // Фиксированное количество столбцов
     let rows = Math.ceil(plaintext.length / columns); // Вычисляем количество строк
     let plusone = Math.ceil(plaintext.length % columns);
@@ -10,7 +10,7 @@ function encrypt() {
     if (plusone == 0) {
         plusone = 5;
     }
-    
+
     // Заполняем матрицу символами
     let matrix = [];
     for (let i = 0; i < rows; i++) {
@@ -48,10 +48,10 @@ function encrypt() {
 
     // Отображаем зашифрованные символы в таблице
     const cipherTable = document.getElementById('cipher-table');
-    cipherTable.style.display = 'block'; // Показываем таблицу
+    cipherTable.style.display = 'block';
 
     const cipherTableBody = document.getElementById('cipher-table-body');
-    cipherTableBody.innerHTML = ''; // Очищаем содержимое таблицы
+    cipherTableBody.innerHTML = '';
 
     for (let i = 0; i < rows; i++) {
         const newRow = cipherTableBody.insertRow();
@@ -64,7 +64,7 @@ function encrypt() {
 
 // Функция для расшифрования текста по таблице
 function decrypt() {
-    let ciphertext = document.getElementById('input').value.toUpperCase().replace(/[^A-Z\s-]/g, ''); // Учитываем пробелы
+    let ciphertext = document.getElementById('input').value.toUpperCase().replace(/[^A-Z\s-]/g, ''); 
     let columns = 5; // Фиксированное количество столбцов
     let rows = Math.ceil(ciphertext.length / columns); // Вычисляем количество строк
 
@@ -77,6 +77,6 @@ function decrypt() {
     }
 
     let result = plaintext.replace(/-/g, '');
-    // Выводим расшифрованный текст
+    
     document.getElementById('output').value = result;
 }
