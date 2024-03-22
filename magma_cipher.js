@@ -37,3 +37,4 @@ function generateKey(length) {
     }
     return key;
 }
+
