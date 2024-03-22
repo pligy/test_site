@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+textarea {
+    width: 30%; /* Уменьшаем ширину текстовой области до 80% доступной ширины */
+    margin: 0 auto; /* Выравниваем по центру */
+    margin-bottom: 20px;
+    display: block; /* Размещаем текстовую область на новой строке */
+}
+
+label {
+    display: block; /* Размещаем метку на новой строке */
+    text-align: center; /* Выравниваем метку по центру */
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    display: block;
+    width: 20%;
+    margin: 0 auto 10px;
+}
+
+.button-wrapper {
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+}
